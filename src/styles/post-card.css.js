@@ -5,15 +5,15 @@ export const PostCardContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
     font-size: var(--fs-medium);
     width: 30rem;
     height: 20rem;
-    margin: -5rem 0 0 0;
+    margin: .5rem;
     padding: 1rem 1.5rem;
     border-radius: 1.2rem;
     border: .6rem solid whitesmoke;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-    
     color: #ffffff;
     background: rgb(9,9,121);
     background: linear-gradient(0deg,

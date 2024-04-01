@@ -4,4 +4,5 @@ export const HeaderContainer = styled.header`
     background-color: #e97878;
     padding: 2rem;
     text-align: center;
+    margin-bottom: 5rem;
 `
