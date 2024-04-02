@@ -10,8 +10,8 @@ export const AppContainer = styled.div`
 `
 export const CardWrapper = styled.div`
     display: flex;
-    flex-direction: column-reverse;
-    font-family: var(--font-primary);
+    flex-direction: column;
+    margin-top: 5rem;
 
     a {
         text-decoration: none;

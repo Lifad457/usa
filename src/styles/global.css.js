@@ -8,9 +8,10 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     &:root {
-        --font-primary: "Nunito Sans", sans-serif;
-        --font-secondary: 'Limelight', sans-serif;
-        --font-tertiary: "Great Vibes", cursive;
+        --ff-primary: "Nunito Sans", sans-serif;
+        --ff-secondary: 'Limelight', sans-serif;
+        --ff-tertiary: "Great Vibes", cursive;
+        --ff-header: "Abril Fatface", serif;
         --fw-light: 300;
         --fw-regular: 400;
         --fw-medium: 500;
@@ -28,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         font-family: var(--font-secondary);
         background-color: beige;
-        line-height: 1.6;
+        line-height: 1.4;
         min-height: 100vh;
         min-height: 100dvh;
 

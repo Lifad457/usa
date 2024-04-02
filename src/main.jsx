@@ -2,16 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import App from './pages/App.jsx'
-import ErrorPage from './components/ErrorPage.jsx'
-import DescLayout from './components/DescLayout.jsx'
-import MonumentValley from './components/MonumentValley.jsx'
+import ErrorPage from './pages/ErrorPage.jsx'
+import MonumentValley from './pages/MonumentValley.jsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<App />} >
-    <Route path='desc' element={<DescLayout />}>
       <Route index element={<ErrorPage />} />
       <Route path='monument-valley' element={<MonumentValley />} />
-    </Route>
 
     <Route path="*" element={<ErrorPage />} />
   </Route>

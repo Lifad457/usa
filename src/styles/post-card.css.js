@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import drapeau from "../assets/images/drapeau.png";
+import monumentValley from "../assets/images/monument-valley.png";
+import { Link } from "react-router-dom";
 
-export const PostCardContainer = styled.div`
+export const PostCardContainer = styled(Link)`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -19,32 +20,33 @@ export const PostCardContainer = styled.div`
     background: linear-gradient(0deg,
         rgba(0, 0, 0, 0.5) 30%,
         rgba(255, 255, 255, 0) 50%),
-        url(${drapeau});
+        url(${monumentValley});
     background-size: cover;
     background-position: top right;
     transform: rotate(-2deg);
     transition: 500ms transform ease-in-out;
     cursor: pointer;
 
+    h2 {
+        font-family: var(--ff-secondary);
+    }
     p {
-        font-family: var(--font-tertiary);
+        font-family: var(--ff-tertiary);
         font-size: var(--fs-medium);
     }
 
-    &:hover,
-    &:focus {
-        transform: scale(1.3);
+    &:hover {
+        transform: scale(1.2) rotate(0deg);
         z-index: 2;
     }
 
-    &:hover + &,
-    &:focus + & {
+    :hover + & {
         transform: scale(1.1) rotate(+2deg);
         z-index: 1;
     }
 
     &:has(+ :hover) {
-        transform: scale(1.1) rotate(-2deg);
+        transform: scale(1.1) rotate(-4deg);
         z-index: 1;
     }
 `

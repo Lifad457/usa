@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import DescLayout from "../components/DescLayout";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -13,14 +12,10 @@ export default function App() {
       <Header />
       <AppContainer>
         <CardWrapper>
-          <PostCard />
-          <PostCard />
-          <Link to="/desc/monument-valley">
-            <PostCard />
-          </Link>
-          <Link to="/desc">
-            <PostCard />
-          </Link>
+            <PostCard to="/" end />
+            <PostCard to="/monument-valley" />
+            <PostCard to="/" end />
+            <PostCard to="/" end />
         </CardWrapper>
         <DescLayout />
       </AppContainer>
