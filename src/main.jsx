@@ -4,11 +4,12 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import App from './pages/App.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'
 import MonumentValley from './pages/MonumentValley.jsx'
+import Index from './pages/Index.jsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<App />} >
-      <Route index element={<ErrorPage />} />
-      <Route path='monument-valley' element={<MonumentValley />} />
+    <Route index element={<Index />} />
+    <Route path='monument-valley' element={<MonumentValley />} />
 
     <Route path="*" element={<ErrorPage />} />
   </Route>

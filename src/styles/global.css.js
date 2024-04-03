@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: var(--font-secondary);
-        background-color: beige;
+        background-color: whitesmoke;
         line-height: 1.4;
         min-height: 100vh;
         min-height: 100dvh;

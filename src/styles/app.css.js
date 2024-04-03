@@ -2,19 +2,15 @@ import styled from "styled-components";
 
 export const AppContainer = styled.div`
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 90rem;
-    min-width: 90rem;
-`
-export const CardWrapper = styled.div`
-    display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 
-    a {
-        text-decoration: none;
-        color: #ffffff;
+    h1 {
+        padding-top: 3rem;
+        font-size: var(--fs-large);
+        font-family: var(--ff-header);
+        margin: 1rem 0;
     }
 `

@@ -2,15 +2,25 @@ import styled from "styled-components";
 import monumentValley from "../assets/images/monument-valley.png";
 import { Link } from "react-router-dom";
 
+export const CardWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-gap: 1rem .5rem;
+    margin-top: 5rem;
+    width: 95rem;
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+`
 export const PostCardContainer = styled(Link)`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    position: relative;
     font-size: var(--fs-medium);
     width: 30rem;
     height: 20rem;
-    margin: .5rem;
     padding: 1rem 1.5rem;
     border-radius: 1.2rem;
     border: .6rem solid whitesmoke;
@@ -23,8 +33,7 @@ export const PostCardContainer = styled(Link)`
         url(${monumentValley});
     background-size: cover;
     background-position: top right;
-    transform: rotate(-2deg);
-    transition: 500ms transform ease-in-out;
+    transition: 500ms scale ease-in-out;
     cursor: pointer;
 
     h2 {
@@ -36,17 +45,17 @@ export const PostCardContainer = styled(Link)`
     }
 
     &:hover {
-        transform: scale(1.2) rotate(0deg);
+        scale: 1.5;
         z-index: 2;
     }
 
     :hover + & {
-        transform: scale(1.1) rotate(+2deg);
+        scale: 1.05;
         z-index: 1;
     }
 
     &:has(+ :hover) {
-        transform: scale(1.1) rotate(-4deg);
+        scale: 1.05;
         z-index: 1;
     }
 `
