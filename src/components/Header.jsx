@@ -3,8 +3,8 @@ import { HeaderContainer } from "../styles/header.css";
 export default function Header() {
     return (
         <HeaderContainer>
-            <h1>ROAD TRIP AUX USA</h1>
-            <h2>22 Mai - 10 Juin 2022</h2>
+           <p>RoadTrip USA</p>
+           <p>22 mai - 10 juin 2022</p>
         </HeaderContainer>
     )
 }

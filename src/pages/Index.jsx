@@ -1,26 +1,20 @@
-import { CardWrapper } from "../styles/post-card.css";
-import PostCard from "../components/PostCard";
-import Header from "../components/Header";
-import { AppContainer } from "../styles/app.css";
+import { MainContainer, TextWrapper } from "../styles/index.css";
 
 export default function Index() {   
     return (
         <>
-            <Header />
-            <AppContainer>
-                <h1>Choisissez une carte postale</h1>
-                <CardWrapper>
-                    <PostCard to="/monument-valley" />
-                    <PostCard to="/monument-valley" />
-                    <PostCard to="/monument-valley" />
-                    <PostCard to="/monument-valley" />
-                    <PostCard to="/monument-valley" />
-                    <PostCard to="/monument-valley" />
-                    <PostCard to="/monument-valley" />
-                    <PostCard to="/monument-valley" />
-                    <PostCard to="/monument-valley" />
-                </CardWrapper>
-            </AppContainer>
+            <MainContainer>
+                <TextWrapper>
+                    <p>Cette terre est la tienne,</p>
+                    <p>Cette terre est la mienne</p>
+                    <p>Du Pacifique à l&apos;île de Manhattan</p>
+                    <p>Des forêts de séquoias,</p>
+                    <p>Aux eaux du Gulf Stream,</p>
+                    <p>Cette terre faite pour toi,</p>
+                    <p>faite pour moi.</p>
+                    <span>Woody Guthrie</span>
+                </TextWrapper>
+            </MainContainer>
         </>
     )
 }
