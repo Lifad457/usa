@@ -23,11 +23,13 @@ export const PostCardContainer = styled(Link)`
     background-position: top right;
     transition: 500ms scale ease-in-out;
     cursor: pointer;
-
+    text-decoration: none;
+    
     h2 {
         font-family: var(--ff-secondary);
         font-size: var(--fs-medium);
     }
+
     p {
         font-family: var(--ff-tertiary);
         font-size: var(--fs-regular);
