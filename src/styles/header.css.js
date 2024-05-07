@@ -11,7 +11,7 @@ export const HeaderContainer = styled.header`
 
     p {
         font-family: var(--ff-header);
-        font-size: var(--fs-small);
+        font-size: var(--fs-medium);
         color: whitesmoke;
         word-spacing: .5rem;
     }
