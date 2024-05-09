@@ -1,4 +1,6 @@
-import { MainContainer, TextWrapper, SectionContainer, Card, CardContainer  } from "../styles/index.css";
+import Card from "../components/Card";
+import monumentValley from "../assets/images/monument-valley.png";
+import { MainContainer, TextWrapper, SectionContainer, CardContainer  } from "../styles/index.css";
 
 export default function Index() {   
     return (
@@ -18,19 +20,17 @@ export default function Index() {
             
             <SectionContainer>
                 <h1>Découvrons ensemble notre voyage !</h1>
+                <p>Je suis heureux de vous accueillir pour vous faire partager notre fabuleux périple aux USA.</p>
+                <p>Ci-dessous les différentes étapes qui ont jallonnées notre parcours.</p>
                 <CardContainer>
-                    <Card to='/'>
-                        <p>Le Grand Canyon</p>
-                    </Card>
-                    <Card to='/'>
-                        <p>Le Grand Canyon</p>
-                    </Card>
-                    <Card to='/'>
-                        <p>Le Grand Canyon</p>
-                    </Card>
-                    <Card to='/'>
-                        <p>Le Grand Canyon</p>
-                    </Card>
+                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est ici que tout commence, le 21 mai 2022 de Paris vers Los Angeles."/>
+                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
+                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
+                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
+                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
+                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
+                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
+                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
                 </CardContainer>
             </SectionContainer>
         </>

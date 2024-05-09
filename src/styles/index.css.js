@@ -6,7 +6,7 @@ export const MainContainer = styled.main`
     background: url(${hero}) no-repeat center top/cover;
     height: 100vh;
     height: 100dvh;
-    color: whitesmoke;
+    color: var(--clr-secondary);
 `
 export const TextWrapper = styled.div`
     display: flex;
@@ -40,46 +40,29 @@ export const TextWrapper = styled.div`
 export const SectionContainer = styled.section`
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 2rem;
+    max-width: 70rem;
+    margin: 0 auto;
+    font-family: var(--ff-primary);
+    color: var(--clr-primary);
+    margin-block: 2rem;
     
-    h1 {
-        font-family: var(--ff-primary);
-        font-size: var(--fs-large);
+    & > h1 {
+        font-size: var(--fs-medium-large);
         text-align: center;
-        margin-block: 3rem;
         line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+
+    & > p {
+        font-size: var(--fs-regular);
+        text-align: left;
+        line-height: 1.6;
     }
 `
 export const CardContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     grid-gap: 2rem;
-    width: 65rem;
-    margin: 0 auto;
-`
-export const Card = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin: 0 auto;
-    padding: 1rem 1.5rem;
-    width: 20rem;
-    height: 30rem;
-    
-    font-size: var(--fs-medium);
-    color: #ffffff;
-    
-    border-radius: 1.2rem;
-    border: .6rem solid whitesmoke;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-    background: url(${hero}) no-repeat left center/cover;
-    
-    cursor: pointer;
-    text-decoration: none;
-    
-    p {
-        font-family: var(--ff-secondary);
-        font-size: var(--fs-medium);
-    }
+    margin-top: 3rem;
 `

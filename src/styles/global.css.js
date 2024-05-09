@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         --ff-secondary: 'Limelight', sans-serif;
         --ff-tertiary: "Great Vibes", cursive;
         --ff-header: "Abril Fatface", serif;
+
         --fw-light: 300;
         --fw-regular: 400;
         --fw-medium: 500;
@@ -25,6 +26,10 @@ export const GlobalStyle = createGlobalStyle`
         --fs-regular: clamp(1.13rem, 1.08rem + 0.22vw, 1.25rem);
         --fs-small: clamp(0.94rem, 0.94rem, 0.94rem);
         --fs-extra-small: clamp(0.70rem, 0.81rem + -0.13vw, 0.78rem);
+
+        --clr-primary: #383838;
+        --clr-secondary: #f5f5f5;
+        --clr-black: #000;
     }
 
     body {
