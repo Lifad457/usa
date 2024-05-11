@@ -16,6 +16,7 @@ export const CardWrapper = styled(Link)`
     img {
         transition: scale .8s ease-in-out;
         box-shadow: 0 0 .4rem .2rem rgba(0, 0, 0, .6);
+        aspect-ratio: 16 / 10;
     }
 
     img:hover {

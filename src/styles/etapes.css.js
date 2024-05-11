@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const SectionContainer = styled.section`
+export const EtapesContainer = styled.section`
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -22,10 +22,4 @@ export const SectionContainer = styled.section`
         text-align: left;
         line-height: 1.6;
     }
-`
-export const CardContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    grid-gap: 2rem;
-    margin-top: 3rem;
 `

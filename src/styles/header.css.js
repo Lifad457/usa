@@ -9,7 +9,8 @@ export const HeaderContainer = styled.header`
     background-color: transparent;
     z-index: 100;
 
-    p {
+    a {
+        text-decoration: none;
         font-family: var(--ff-header);
         font-size: var(--fs-medium);
         color: whitesmoke;

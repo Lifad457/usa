@@ -1,12 +1,23 @@
 import Card from "../components/Card";
-import monumentValley from "../assets/images/monument-valley.png";
-import { MainContainer, TextWrapper, SectionContainer, CardContainer  } from "../styles/index.css";
+import { SectionContainer, CardContainer  } from "../styles/index.css";
+import { MainContainer, TextWrapper } from "../styles/app.css";
+import hero from '../assets/images/index/hero.jpg';
+import burbank from '../assets/images/burbank/hero.jpg';
+import palmSprings from '../assets/images/palm-springs/hero.jpg';
+import grandCanyon from '../assets/images/grand-canyon/hero.jpg';
+import page from '../assets/images/page/hero.jpg';
+import monumentValley from '../assets/images/monument-valley/hero.jpg';
+import kanab from '../assets/images/kanab/hero.jpg';
+import deathValley from '../assets/images/death-valley/hero.jpg';
+import sequoiaPark from '../assets/images/sequoia-park/hero.jpg';
+import yosemite from '../assets/images/yosemite/hero.jpg';
+import sanFrancisco from '../assets/images/san-francisco/hero.jpg';
 
 export default function Index() {   
     return (
         <>
-            <MainContainer>
-                <TextWrapper>
+            <MainContainer src={hero}>
+                <TextWrapper className="woody">
                     <p>Cette terre est la tienne,</p>
                     <p>Cette terre est la mienne</p>
                     <p>Du Pacifique à l&apos;île de Manhattan</p>
@@ -23,14 +34,16 @@ export default function Index() {
                 <p>Je suis heureux de vous accueillir pour vous faire partager notre fabuleux périple aux USA.</p>
                 <p>Ci-dessous les différentes étapes qui ont jallonnées notre parcours.</p>
                 <CardContainer>
-                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est ici que tout commence, le 21 mai 2022 de Paris vers Los Angeles."/>
-                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
-                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
-                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
-                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
-                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
-                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
-                    <Card to='/' src={monumentValley} title="Le grand départ" desc="C'est partit"/>
+                    <Card to='burbank' src={burbank} title="Los Angeles" desc="C'est ici que tout commence, le 21 mai 2022 de Paris vers Los Angeles."/>
+                    <Card to='/palm-springs' src={palmSprings} title="Palm Springs" desc="Lorem ipsum, dolor sit amet consectetur"/>
+                    <Card to='/grand-canyon' src={grandCanyon} title="Le Grand Canyon" desc="Lorem ipsum, dolor sit amet consectetur"/>
+                    <Card to='/page' src={page} title="Page" desc="Lorem ipsum, dolor sit amet consectetur"/>
+                    <Card to='/monument-valley' src={monumentValley} title="Monument Valley" desc="Lorem ipsum, dolor sit amet consectetur"/>
+                    <Card to='/kanab' src={kanab} title="Kanab" desc="Lorem ipsum, dolor sit amet consectetur"/>
+                    <Card to='/death-valley' src={deathValley} title="Death Valley" desc="Lorem ipsum, dolor sit amet consectetur"/>
+                    <Card to='/sequoia-park' src={sequoiaPark} title="Sequoia Park" desc="Lorem ipsum, dolor sit amet consectetur"/>
+                    <Card to='/yosemite' src={yosemite} title="Yosemite" desc="Lorem ipsum, dolor sit amet consectetur"/>
+                    <Card to='/san-francisco' src={sanFrancisco} title="San Francisco" desc="Lorem ipsum, dolor sit amet consectetur"/>
                 </CardContainer>
             </SectionContainer>
         </>
