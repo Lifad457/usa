@@ -35,15 +35,15 @@ export default function Index() {
                 <p>Ci-dessous les différentes étapes qui ont jallonnées notre parcours.</p>
                 <CardContainer>
                     <Card to='burbank' src={burbank} title="Los Angeles" desc="C'est ici que tout commence, le 21 mai 2022 de Paris vers Los Angeles."/>
-                    <Card to='/palm-springs' src={palmSprings} title="Palm Springs" desc="Lorem ipsum, dolor sit amet consectetur"/>
-                    <Card to='/grand-canyon' src={grandCanyon} title="Le Grand Canyon" desc="Lorem ipsum, dolor sit amet consectetur"/>
-                    <Card to='/page' src={page} title="Page" desc="Lorem ipsum, dolor sit amet consectetur"/>
-                    <Card to='/monument-valley' src={monumentValley} title="Monument Valley" desc="Lorem ipsum, dolor sit amet consectetur"/>
-                    <Card to='/kanab' src={kanab} title="Kanab" desc="Lorem ipsum, dolor sit amet consectetur"/>
-                    <Card to='/death-valley' src={deathValley} title="Death Valley" desc="Lorem ipsum, dolor sit amet consectetur"/>
-                    <Card to='/sequoia-park' src={sequoiaPark} title="Sequoia Park" desc="Lorem ipsum, dolor sit amet consectetur"/>
-                    <Card to='/yosemite' src={yosemite} title="Yosemite" desc="Lorem ipsum, dolor sit amet consectetur"/>
-                    <Card to='/san-francisco' src={sanFrancisco} title="San Francisco" desc="Lorem ipsum, dolor sit amet consectetur"/>
+                    <Card to='/palm-springs' src={palmSprings} title="Palm Springs" desc="Un oasis dans le désert. Vue imprenable depuis Mount San Jacinto et Joshua Tree."/>
+                    <Card to='/grand-canyon' src={grandCanyon} title="Le Grand Canyon" desc="Une merveille géologique."/>
+                    <Card to='/page' src={page} title="Page" desc="Un lieu absolument magique. Visite de Antelope Canypon et Horseshoe Bend."/>
+                    <Card to='/monument-valley' src={monumentValley} title="Monument Valley" desc="La vallée des rocs."/>
+                    <Card to='/kanab' src={kanab} title="Kanab" desc="Un paysage unique au monde. Découverte de Bryce Canyon et Zion Park."/>
+                    <Card to='/death-valley' src={deathValley} title="Death Valley" desc="Des salines aux dunes de sable et montagnes."/>
+                    <Card to='/sequoia-park' src={sequoiaPark} title="Sequoia Park" desc="Une expérience époustouflante."/>
+                    <Card to='/yosemite' src={yosemite} title="Yosemite" desc="Un joyau de la nature."/>
+                    <Card to='/san-francisco' src={sanFrancisco} title="San Francisco" desc="Berceau de l'innovation et de la diversité."/>
                 </CardContainer>
             </SectionContainer>
         </>

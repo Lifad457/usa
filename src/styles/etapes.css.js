@@ -12,14 +12,14 @@ export const EtapesContainer = styled.section`
     
     & > h1 {
         font-size: var(--fs-medium-large);
-        text-align: center;
         line-height: 1.2;
-        margin-bottom: 2rem;
+        margin-block: .5rem;
     }
 
     & > p {
         font-size: var(--fs-regular);
         text-align: left;
         line-height: 1.6;
+        margin-block: 1rem;
     }
 `
