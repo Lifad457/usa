@@ -16,6 +16,12 @@ export const EtapesContainer = styled.section`
         margin-block: .5rem;
     }
 
+    & > h2 {
+        font-size: var(--fs-medium);
+        line-height: 1.2;
+        margin-block: .5rem;
+    }
+
     & > p {
         font-size: var(--fs-regular);
         text-align: left;
