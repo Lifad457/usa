@@ -39,6 +39,13 @@ export const PhotosContainer = styled.section`
                 'three one'
                 'three two';
             }
+
+            &.stacked {
+                grid-template-areas: 
+                'one'
+                'two'
+                'three';
+            }
         }
 
         &.four-pictures {

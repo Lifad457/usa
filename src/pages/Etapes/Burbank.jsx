@@ -26,6 +26,21 @@ import voiture from '../../assets/images/burbank/20.jpg';
 import choixpeau from '../../assets/images/burbank/21.jpg'; 
 import coupe from '../../assets/images/burbank/22.jpg'; 
 import dobby from '../../assets/images/burbank/23.jpg'; 
+import plaque from '../../assets/images/burbank/24.jpg'; 
+import ascenceur from '../../assets/images/burbank/25.jpg'; 
+import canape from '../../assets/images/burbank/26.jpg'; 
+import vitrine from '../../assets/images/burbank/27.jpg'; 
+import menu from '../../assets/images/burbank/28.jpg'; 
+import kiosque from '../../assets/images/burbank/29.jpg'; 
+import maison from '../../assets/images/burbank/30.jpg'; 
+import eglise from '../../assets/images/burbank/31.jpg'; 
+import arckam from '../../assets/images/burbank/32.jpg'; 
+import moto from '../../assets/images/burbank/33.jpg'; 
+import batmobile1 from '../../assets/images/burbank/34.jpg'; 
+import batmobile2 from '../../assets/images/burbank/35.jpg'; 
+import script from '../../assets/images/burbank/36.jpg'; 
+import storyboard1 from '../../assets/images/burbank/37.jpg'; 
+import storyboard2 from '../../assets/images/burbank/38.jpg'; 
 
 export default function Burbank() {
     return (
@@ -36,8 +51,10 @@ export default function Burbank() {
                     <hr />
                     <h3>C&apos;est ici que tout commence</h3>
                 </TextWrapper>
-            </MainContainer>    
+            </MainContainer>  
+
             <EtapesContainer>
+
                 <h1>Direction Burbank</h1>
                 <p>À peine atterit il s&apos;agit de récupérer la voiture de location et se rendre à notre première location à Burbank.</p>
                 <PhotosContainer className="three-pictures">
@@ -64,7 +81,13 @@ export default function Burbank() {
                     <Photo src={chateauDeau} alt="Chateau d'eau" className="row-span-2" />
                 </PhotosContainer>
 
-                <h2>L&apos;univers Harry Potter</h2>
+                <PhotosContainer className="three-pictures">
+                    <Photo src={kiosque} alt="Kiosque à musique" />
+                    <Photo src={maison} alt="Maison" />
+                    <Photo src={eglise} alt="Eglise" className="row-span-2" />
+                </PhotosContainer>
+
+                <h2>L&apos;univers d&apos;Harry Potter</h2>
                 <p>La chambre sous l&apos;escalier.</p>
                 <PhotosContainer className="two-pictures">
                     <Photo src={chambre} alt="Chambre sous l&apos;escalier" />
@@ -90,6 +113,39 @@ export default function Burbank() {
                     <Photo src={choixpeau} alt="Choixpeau" />
                     <Photo src={coupe} alt="Coupe de feu" />
                     <Photo src={dobby} alt="Dobby" className="col-span-2" />
+                </PhotosContainer>
+
+                <h2>Batman</h2>
+
+                <PhotosContainer>
+                    <Photo src={arckam} alt="Batmobile" />
+                </PhotosContainer>
+
+                <PhotosContainer className="three-pictures stacked" >
+                    <Photo src={moto} alt="Batmobile" />
+                    <Photo src={batmobile1} alt="Batmobile" />
+                    <Photo src={batmobile2} alt="Batmobile" />
+                </PhotosContainer>
+
+                <h2>Les décors de séries</h2>
+                <p>Big Bang Theory.</p>
+                <PhotosContainer className="two-pictures">
+                    <Photo src={plaque} alt="Plaque Warner Bros" />
+                    <Photo src={ascenceur} alt="Ascenseur Big Bang Theory" />
+                </PhotosContainer>
+                
+                <p>Friends.</p>
+                <PhotosContainer className="three-pictures">
+                    <Photo src={canape} alt="Plaque Warner Bros" />
+                    <Photo src={vitrine} alt="Plaque Warner Bros" />
+                    <Photo src={menu} alt="Plaque Warner Bros" className="row-span-2" />
+                </PhotosContainer>
+
+                <p>Pour conclure, ça bosse dur ...</p>
+                <PhotosContainer className="three-pictures left">
+                    <Photo src={storyboard1} alt="Storyboard Matrix" />
+                    <Photo src={storyboard2} alt="Storyboard Sweeny todd" />
+                    <Photo src={script} alt="Script" className="row-span-2" />
                 </PhotosContainer>
             </EtapesContainer>
         </>
