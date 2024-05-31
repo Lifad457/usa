@@ -116,7 +116,6 @@ export default function Burbank() {
                 </PhotosContainer>
 
                 <h2>Batman</h2>
-
                 <PhotosContainer>
                     <Photo src={arckam} alt="Batmobile" />
                 </PhotosContainer>
