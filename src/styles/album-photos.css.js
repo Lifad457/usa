@@ -1,121 +1,127 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const PhotosContainer = styled.section`
-    display: grid;
-    grid-gap: .6rem;
-    grid-auto-columns: 1fr;
-    margin-block: 2rem;
+	display: grid;
+	grid-gap: 0.6rem;
+	grid-auto-columns: 1fr;
+	margin-block: 2rem;
 
-    @media screen and (min-width: 768px) {
-        &.two-pictures {
-            :nth-child(1) {
-                grid-area: one;
-            }
-            :nth-child(2) {
-                grid-area: two;
-            }
+	@media screen and (min-width: 768px) {
+		&.two-pictures {
+			:nth-child(1) {
+				grid-area: one;
+			}
+			:nth-child(2) {
+				grid-area: two;
+			}
 
-            grid-template-areas: 
-            'one two';
-        }
+			grid-template-areas: 'one two';
+		}
 
-        &.three-pictures {
-            :nth-child(1) {
-                grid-area: one;
-            }
-            :nth-child(2) {
-                grid-area: two;
-            }
-            :nth-child(3) {
-                grid-area: three;
-            }
-    
-            grid-template-areas: 
-                'one three'
-                'two three';
+		&.three-pictures {
+			:nth-child(1) {
+				grid-area: one;
+			}
+			:nth-child(2) {
+				grid-area: two;
+			}
+			:nth-child(3) {
+				grid-area: three;
+			}
 
-            &.left {
-                grid-template-areas: 
-                'three one'
-                'three two';
-            }
+			grid-template-areas:
+				'one three'
+				'two three';
 
-            &.stacked {
-                grid-template-areas: 
-                'one'
-                'two'
-                'three';
-            }
-        }
+			&.left {
+				grid-template-areas:
+					'three one'
+					'three two';
+			}
 
-        &.four-pictures {
-            grid-template-areas: 
-            'one one'
-            'two three'
-            'four four';
-            
-            :nth-child(1) {
-                grid-area: one;
-            }
-            :nth-child(2) {
-                grid-area: two;
-            }
-            :nth-child(3) {
-                grid-area: three;
-            }
-            :nth-child(4) {
-                grid-area: four;
-            }
-        }
+			&.stacked {
+				grid-template-areas:
+					'one'
+					'two'
+					'three';
+			}
+		}
 
-        &.five-pictures {
-            grid-template-areas: 
-            'one two'
-            'three four'
-            'five five';
-            
-            :nth-child(1) {
-                grid-area: one;
-            }
-            :nth-child(2) {
-                grid-area: two;
-            }
-            :nth-child(3) {
-                grid-area: three;
-            }
-            :nth-child(4) {
-                grid-area: four;
-            }
-            :nth-child(5) {
-                grid-area: five;
-            }
-        }
+		&.four-pictures {
+			grid-template-areas:
+				'one one'
+				'two three'
+				'four four';
 
-        &.six-pictures {
-            grid-template-areas: 
-            'one two'
-            'three two'
-            'six four'
-            'six five';
-            
-            :nth-child(1) {
-                grid-area: one;
-            }
-            :nth-child(2) {
-                grid-area: two;
-            }
-            :nth-child(3) {
-                grid-area: three;
-            }
-            :nth-child(4) {
-                grid-area: four;
-            }
-            :nth-child(5) {
-                grid-area: five;
-            }
-            :nth-child(6) {
-                grid-area: six;
-            }
-        }
-    }
-`
+			:nth-child(1) {
+				grid-area: one;
+			}
+			:nth-child(2) {
+				grid-area: two;
+			}
+			:nth-child(3) {
+				grid-area: three;
+			}
+			:nth-child(4) {
+				grid-area: four;
+			}
+		}
+
+		&.five-pictures {
+			:nth-child(1) {
+				grid-area: one;
+			}
+			:nth-child(2) {
+				grid-area: two;
+			}
+			:nth-child(3) {
+				grid-area: three;
+			}
+			:nth-child(4) {
+				grid-area: four;
+			}
+			:nth-child(5) {
+				grid-area: five;
+			}
+
+			grid-template-areas:
+				'one two'
+				'three four'
+				'five five';
+
+			&.variant {
+				grid-template-areas:
+					'one five'
+					'two five'
+					'three four';
+			}
+		}
+
+		&.six-pictures {
+			grid-template-areas:
+				'one two'
+				'three two'
+				'six four'
+				'six five';
+
+			:nth-child(1) {
+				grid-area: one;
+			}
+			:nth-child(2) {
+				grid-area: two;
+			}
+			:nth-child(3) {
+				grid-area: three;
+			}
+			:nth-child(4) {
+				grid-area: four;
+			}
+			:nth-child(5) {
+				grid-area: five;
+			}
+			:nth-child(6) {
+				grid-area: six;
+			}
+		}
+	}
+`;
