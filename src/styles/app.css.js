@@ -80,19 +80,12 @@ export const TextWrapper = styled.div`
 		flex-wrap: wrap;
 		overflow: hidden;
 		line-height: 1.5;
-		margin: 14dvh 20dvw 0 auto;
-		margin: 14vh 20vw 0 auto;
+		margin: 5dvh 20dvw 0 auto;
+		margin: 5vh 20vw 0 auto;
 		text-align: left;
 
 		p {
 			padding-left: 2rem;
-		}
-
-		span {
-			text-align: right;
-			padding-right: 2rem;
-			padding-top: 0.8rem;
-			font-size: var(--fs-large);
 		}
 	}
 `;

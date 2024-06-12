@@ -25,7 +25,6 @@ export default function Index() {
 					<p>Aux eaux du Gulf Stream,</p>
 					<p>Cette terre faite pour toi,</p>
 					<p>faite pour moi.</p>
-					<span>Woody Guthrie</span>
 				</TextWrapper>
 			</MainContainer>
 

@@ -42,6 +42,15 @@ import jt26 from '../../assets/images/palm-springs/36.jpg';
 import jt27 from '../../assets/images/palm-springs/37.jpg';
 import jt28 from '../../assets/images/palm-springs/38.jpg';
 import jt29 from '../../assets/images/palm-springs/39.jpg';
+import w1 from '../../assets/images/palm-springs/w1.jpg';
+import w2 from '../../assets/images/palm-springs/w2.jpg';
+import w3 from '../../assets/images/palm-springs/w3.jpg';
+import w4 from '../../assets/images/palm-springs/w4.jpg';
+import w5 from '../../assets/images/palm-springs/w5.jpg';
+import w6 from '../../assets/images/palm-springs/w6.jpg';
+import w7 from '../../assets/images/palm-springs/w7.jpg';
+import w8 from '../../assets/images/palm-springs/w8.jpg';
+import w9 from '../../assets/images/palm-springs/w9.jpg';
 
 export default function PalmSprings() {
 	return (
@@ -119,15 +128,27 @@ export default function PalmSprings() {
 					<Photo src={jt2} alt='Joshua Tree' />
 					<Photo src={jt3} alt='Joshua Tree' />
 					<Photo src={jt4} alt='Joshua Tree' />
-					<Photo src={jt26} alt='Joshua Tree' className='row-span-2' />
+					<Photo
+						src={jt26}
+						alt='Joshua Tree'
+						className='row-span-2'
+					/>
 				</PhotosContainer>
 				<PhotosContainer className='six-pictures'>
 					<Photo src={jt6} alt='Joshua Tree' />
-					<Photo src={jt10} alt='Joshua Tree' className='row-span-2' />
+					<Photo
+						src={jt10}
+						alt='Joshua Tree'
+						className='row-span-2'
+					/>
 					<Photo src={jt7} alt='Joshua Tree' />
 					<Photo src={jt8} alt='Joshua Tree' />
 					<Photo src={jt9} alt='Joshua Tree' />
-					<Photo src={jt13} alt='Joshua Tree'  className='row-span-2' />
+					<Photo
+						src={jt13}
+						alt='Joshua Tree'
+						className='row-span-2'
+					/>
 				</PhotosContainer>
 				<PhotosContainer className='four-pictures'>
 					<Photo src={jt12} alt='Joshua Tree' />
@@ -156,14 +177,33 @@ export default function PalmSprings() {
 				</PhotosContainer>
 				<h1>Direction Williams</h1>
 				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-					Alias pariatur consequuntur adipisci repellat quisquam
-					aliquam reiciendis. Debitis quisquam excepturi, maxime
-					voluptate corrupti incidunt et maiores architecto officiis
-					tempora dolor odio. Odio temporibus provident culpa earum ab
-					doloremque doloribus nostrum impedit quia aliquid quae,
-					suscipit, accusantium cum modi et voluptas assumenda.
+					La ferme aux alpagas à Williams, Arizona, est une attraction
+					charmante et unique où les visiteurs peuvent interagir avec
+					des alpagas dans un cadre pittoresque. Située dans la région
+					boisée et montagneuse du nord de l&apos;Arizona, cette ferme
+					offre une expérience éducative et ludique pour les familles,
+					les amoureux des animaux et les curieux. Les visiteurs ont
+					l&apos;occasion d&apos;en apprendre davantage sur les
+					alpagas, leur comportement, leur alimentation, et le
+					processus de transformation de leur laine douce et luxueuse.
+					En plus des interactions avec les alpagas, la ferme propose
+					souvent des visites guidées, des activités pour les enfants
+					et des produits artisanaux en laine d&apos;alpaga
+					disponibles à la vente.
 				</p>
+				<PhotosContainer className='five-pictures'>
+					<Photo src={w5} alt='Williams' />
+					<Photo src={w2} alt='Williams' />
+					<Photo src={w3} alt='Williams' />
+					<Photo src={w4} alt='Williams' />
+					<Photo src={w1} alt='Williams' />
+				</PhotosContainer>
+				<PhotosContainer className='four-pictures'>
+					<Photo src={w6} alt='Williams' />
+					<Photo src={w7} alt='Williams' />
+					<Photo src={w8} alt='Williams' />
+					<Photo src={w9} alt='Williams' />
+				</PhotosContainer>
 			</EtapesContainer>
 		</>
 	);
