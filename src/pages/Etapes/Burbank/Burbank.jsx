@@ -2,12 +2,12 @@ import { MainContainer, TextWrapper } from '../../../styles/app.css';
 import { EtapesContainer } from '../../../styles/etapes.css';
 import { PhotosContainer } from '../../../styles/album-photos.css';
 import { Photo } from '../../../styles/photo.css';
-import { index } from './index';
+import { images } from './images';
 
 export default function Burbank() {
 	return (
 		<>
-			<MainContainer src={index.hero.image}>
+			<MainContainer src={images.hero.image} alt={images.hero.alt}>
 				<TextWrapper>
 					<span>21 mai 2022 - 22 mai 2022</span>
 					<hr />
@@ -22,14 +22,14 @@ export default function Burbank() {
 					location et se rendre à notre première location à Burbank.
 				</p>
 				<PhotosContainer className='three-pictures'>
-					<Photo src={index.route.image} alt={index.route.alt} />
+					<Photo src={images.route.image} alt={images.route.alt} />
 					<Photo
-						src={index.location.image}
-						alt={index.location.alt}
+						src={images.location.image}
+						alt={images.location.alt}
 					/>
 					<Photo
-						src={index.entrée.image}
-						alt={index.entrée.alt}
+						src={images.entrée.image}
+						alt={images.entrée.alt}
 						className='row-span-2'
 					/>
 				</PhotosContainer>
@@ -37,23 +37,23 @@ export default function Burbank() {
 				<p>Une petite promenade dans le quartier.</p>
 				<PhotosContainer className='six-pictures'>
 					<Photo
-						src={index.pancartes.image}
-						alt={index.pancartes.alt}
+						src={images.pancartes.image}
+						alt={images.pancartes.alt}
 					/>
 					<Photo
-						src={index.boite.image}
-						alt={index.boite.alt}
+						src={images.boite.image}
+						alt={images.boite.alt}
 						className='row-span-2'
 					/>
-					<Photo src={index.lapin.image} alt={index.lapin.alt} />
-					<Photo src={index.chien.image} alt={index.chien.alt} />
+					<Photo src={images.lapin.image} alt={images.lapin.alt} />
+					<Photo src={images.chien.image} alt={images.chien.alt} />
 					<Photo
-						src={index.ecureuil.image}
-						alt={index.ecureuil.alt}
+						src={images.ecureuil.image}
+						alt={images.ecureuil.alt}
 					/>
 					<Photo
-						src={index.drapeau.image}
-						alt={index.drapeau.alt}
+						src={images.drapeau.image}
+						alt={images.drapeau.alt}
 						className='row-span-2'
 					/>
 				</PhotosContainer>
@@ -64,24 +64,27 @@ export default function Burbank() {
 					Warner.
 				</p>
 				<PhotosContainer className='three-pictures left'>
-					<Photo src={index.logoWB.image} alt={index.logoWB.alt} />
+					<Photo src={images.logoWB.image} alt={images.logoWB.alt} />
 					<Photo
-						src={index.maquette.image}
-						alt={index.maquette.alt}
+						src={images.maquette.image}
+						alt={images.maquette.alt}
 					/>
 					<Photo
-						src={index.chateauDeau.image}
-						alt={index.chateauDeau.alt}
+						src={images.chateauDeau.image}
+						alt={images.chateauDeau.alt}
 						className='row-span-2'
 					/>
 				</PhotosContainer>
 
 				<PhotosContainer className='three-pictures'>
-					<Photo src={index.kiosque.image} alt={index.kiosque.alt} />
-					<Photo src={index.maison.image} alt={index.maison.alt} />
 					<Photo
-						src={index.eglise.image}
-						alt={index.eglise.alt}
+						src={images.kiosque.image}
+						alt={images.kiosque.alt}
+					/>
+					<Photo src={images.maison.image} alt={images.maison.alt} />
+					<Photo
+						src={images.eglise.image}
+						alt={images.eglise.alt}
 						className='row-span-2'
 					/>
 				</PhotosContainer>
@@ -89,29 +92,38 @@ export default function Burbank() {
 				<h2>L&apos;univers d&apos;Harry Potter</h2>
 				<p>La chambre sous l&apos;escalier.</p>
 				<PhotosContainer className='two-pictures'>
-					<Photo src={index.chambre.image} alt={index.chambre.alt} />
 					<Photo
-						src={index.escalier.image}
-						alt={index.escalier.alt}
+						src={images.chambre.image}
+						alt={images.chambre.alt}
+					/>
+					<Photo
+						src={images.escalier.image}
+						alt={images.escalier.alt}
 					/>
 				</PhotosContainer>
 
 				<p>Edwige dans sa cage et la cheminée avec les lettres.</p>
 				<PhotosContainer className='two-pictures'>
-					<Photo src={index.edwige.image} alt={index.edwige.alt} />
+					<Photo src={images.edwige.image} alt={images.edwige.alt} />
 					<Photo
-						src={index.cheminee.image}
-						alt={index.cheminee.alt}
+						src={images.cheminee.image}
+						alt={images.cheminee.alt}
 					/>
 				</PhotosContainer>
 
 				<p>L&apos;atelier de potions.</p>
 				<PhotosContainer className='three-pictures'>
-					<Photo src={index.atelier.image} alt={index.atelier.alt} />
-					<Photo src={index.recette.image} alt={index.recette.alt} />
 					<Photo
-						src={index.mandragore.image}
-						alt={index.mandragore.alt}
+						src={images.atelier.image}
+						alt={images.atelier.alt}
+					/>
+					<Photo
+						src={images.recette.image}
+						alt={images.recette.alt}
+					/>
+					<Photo
+						src={images.mandragore.image}
+						alt={images.mandragore.alt}
 						className='row-span-2'
 					/>
 				</PhotosContainer>
@@ -119,56 +131,59 @@ export default function Burbank() {
 				<p>Bonus.</p>
 				<PhotosContainer className='four-pictures'>
 					<Photo
-						src={index.voiture.image}
-						alt={index.voiture.alt}
+						src={images.voiture.image}
+						alt={images.voiture.alt}
 						className='col-span-2'
 					/>
 					<Photo
-						src={index.choixpeau.image}
-						alt={index.choixpeau.alt}
+						src={images.choixpeau.image}
+						alt={images.choixpeau.alt}
 					/>
-					<Photo src={index.coupe.image} alt={index.coupe.alt} />
+					<Photo src={images.coupe.image} alt={images.coupe.alt} />
 					<Photo
-						src={index.dobby.image}
-						alt={index.dobby.alt}
+						src={images.dobby.image}
+						alt={images.dobby.alt}
 						className='col-span-2'
 					/>
 				</PhotosContainer>
 
 				<h2>Batman</h2>
 				<PhotosContainer>
-					<Photo src={index.arckam.image} alt={index.arckam.alt} />
+					<Photo src={images.arckam.image} alt={images.arckam.alt} />
 				</PhotosContainer>
 
 				<PhotosContainer className='three-pictures stacked'>
-					<Photo src={index.moto.image} alt={index.moto.alt} />
+					<Photo src={images.moto.image} alt={images.moto.alt} />
 					<Photo
-						src={index.batmobile1.image}
-						alt={index.batmobile1.alt}
+						src={images.batmobile1.image}
+						alt={images.batmobile1.alt}
 					/>
 					<Photo
-						src={index.batmobile2.image}
-						alt={index.batmobile2.alt}
+						src={images.batmobile2.image}
+						alt={images.batmobile2.alt}
 					/>
 				</PhotosContainer>
 
 				<h2>Les décors de séries</h2>
 				<p>Big Bang Theory.</p>
 				<PhotosContainer className='two-pictures'>
-					<Photo src={index.plaque.image} alt={index.plaque.alt} />
+					<Photo src={images.plaque.image} alt={images.plaque.alt} />
 					<Photo
-						src={index.ascenceur.image}
-						alt={index.ascenceur.alt}
+						src={images.ascenceur.image}
+						alt={images.ascenceur.alt}
 					/>
 				</PhotosContainer>
 
 				<p>Friends.</p>
 				<PhotosContainer className='three-pictures'>
-					<Photo src={index.canape.image} alt={index.canape.alt} />
-					<Photo src={index.vitrine.image} alt={index.vitrine.alt} />
+					<Photo src={images.canape.image} alt={images.canape.alt} />
 					<Photo
-						src={index.menu.image}
-						alt={index.menu.alt}
+						src={images.vitrine.image}
+						alt={images.vitrine.alt}
+					/>
+					<Photo
+						src={images.menu.image}
+						alt={images.menu.alt}
 						className='row-span-2'
 					/>
 				</PhotosContainer>
@@ -176,16 +191,16 @@ export default function Burbank() {
 				<p>Pour conclure, ça bosse dur ...</p>
 				<PhotosContainer className='three-pictures left'>
 					<Photo
-						src={index.storyboard1.image}
-						alt={index.storyboard1.alt}
+						src={images.storyboard1.image}
+						alt={images.storyboard1.alt}
 					/>
 					<Photo
-						src={index.storyboard2.image}
-						alt={index.storyboard2.alt}
+						src={images.storyboard2.image}
+						alt={images.storyboard2.alt}
 					/>
 					<Photo
-						src={index.script.image}
-						alt={index.script.alt}
+						src={images.script.image}
+						alt={images.script.alt}
 						className='row-span-2'
 					/>
 				</PhotosContainer>

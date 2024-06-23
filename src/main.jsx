@@ -12,8 +12,12 @@ import Index from './pages/Index.jsx';
 import Loading from './pages/Loading.jsx';
 
 const Burbank = React.lazy(() => import('./pages/Etapes/Burbank/Burbank.jsx'));
-const PalmSprings = React.lazy(() => import('./pages/Etapes/PalmSprings.jsx'));
-const GrandCanyon = React.lazy(() => import('./pages/Etapes/GrandCanyon.jsx'));
+const PalmSprings = React.lazy(() =>
+	import('./pages/Etapes/PalmSprings/PalmSprings.jsx')
+);
+const GrandCanyon = React.lazy(() =>
+	import('./pages/Etapes/GrandCanyon/GrandCanyon.jsx')
+);
 const Page = React.lazy(() => import('./pages/Etapes/Page.jsx'));
 const MonumentValley = React.lazy(() =>
 	import('./pages/Etapes/MonumentValley.jsx')

@@ -38,10 +38,10 @@ import script from '../../../assets/images/burbank/36.jpg';
 import storyboard1 from '../../../assets/images/burbank/37.jpg';
 import storyboard2 from '../../../assets/images/burbank/38.jpg';
 
-export const index = {
+export const images = {
 	hero: {
 		image: hero,
-		alt: 'Hero',
+		alt: 'Hero image',
 	},
 	route: {
 		image: route,
