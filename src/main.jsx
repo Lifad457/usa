@@ -11,24 +11,18 @@ import ErrorPage from './pages/ErrorPage.jsx';
 import Index from './pages/Index.jsx';
 import Loading from './pages/Loading.jsx';
 
-const Burbank = React.lazy(() => import('./pages/Etapes/Burbank/Burbank.jsx'));
-const PalmSprings = React.lazy(() =>
-	import('./pages/Etapes/PalmSprings/PalmSprings.jsx')
-);
-const GrandCanyon = React.lazy(() =>
-	import('./pages/Etapes/GrandCanyon/GrandCanyon.jsx')
-);
-const Page = React.lazy(() => import('./pages/Etapes/Page.jsx'));
-const MonumentValley = React.lazy(() =>
-	import('./pages/Etapes/MonumentValley.jsx')
-);
-const Kanab = React.lazy(() => import('./pages/Etapes/Kanab.jsx'));
-const DeathValley = React.lazy(() => import('./pages/Etapes/DeathValley.jsx'));
-const SequoiaPark = React.lazy(() => import('./pages/Etapes/SequoiaPark.jsx'));
-const Yosemite = React.lazy(() => import('./pages/Etapes/Yosemite.jsx'));
-const SanFrancisco = React.lazy(() =>
-	import('./pages/Etapes/SanFrancisco.jsx')
-);
+import {
+	Burbank,
+	PalmSprings,
+	GrandCanyon,
+	Page,
+	MonumentValley,
+	Kanab,
+	DeathValley,
+	SequoiaPark,
+	Yosemite,
+	SanFrancisco,
+} from './etapes';
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
