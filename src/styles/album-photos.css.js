@@ -52,6 +52,13 @@ export const PhotosContainer = styled.section`
 				'one one'
 				'two three'
 				'four four';
+			&.variant {
+				grid-template-areas:
+					'one two'
+					'one two'
+					'three four'
+					'three four';
+			}
 
 			:nth-child(1) {
 				grid-area: one;
@@ -95,6 +102,14 @@ export const PhotosContainer = styled.section`
 					'two five'
 					'three four';
 			}
+			&.variant2 {
+				grid-template-areas:
+					'one two'
+					'one two'
+					'three three'
+					'four five'
+					'four five';
+			}
 		}
 
 		&.six-pictures {
@@ -103,6 +118,22 @@ export const PhotosContainer = styled.section`
 				'three two'
 				'six four'
 				'six five';
+
+			&.variant {
+				grid-template-areas:
+					'one one'
+					'two three'
+					'two three'
+					'four five'
+					'four five'
+					'six six';
+			}
+			&.variant2 {
+				grid-template-areas:
+					'one two'
+					'three four'
+					'five six';
+			}
 
 			:nth-child(1) {
 				grid-area: one;
